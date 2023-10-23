@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <label>First Name: <input type="text" id="first-name" required></label>
+            <label>Last Name: <input type="text" id="last-name" required></label>
+            <label>Date of Birth: <input type="date" id="dob" required></label>
+            <label>Country:
+                <select id="country" required>
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="India">India</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Europ">Europ</option>
+                    <option value="Singapur">Singapur</option>
+                    <option value="UK">UK</option>
+                </select>
+            </label>
+            <label>Gender:
+                <input type="radio" id="male" name="gender" value="Male"> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female
+            </label>
+            <label>Profession: <input type="text" id="profession" required></label>
+            <label>Email: <input type="email" id="email" required></label>
+            <label>Mobile Number: <input type="tel" id="mobile" required></label>
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Survey Form Submission</h2>
+            <div id="popup-data"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

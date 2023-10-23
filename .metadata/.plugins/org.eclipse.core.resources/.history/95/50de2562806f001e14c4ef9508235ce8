@@ -1,0 +1,18 @@
+package com.cloudVandanaSol;
+
+public class PangramChecker {
+    public static void main(String[] args) {
+        String input = "The quick brown fox jumps over the lazy dog"; // Replace with your input string
+        String newinput=input.replace(" ","");
+        newinput.toUpperCase();
+        System.out.println(newinput);
+        char array[]=newinput.toCharArray();
+        
+        int size=array.length;
+        int i=0;
+        while(i != size) {
+        	
+        }
+    }
+
+}

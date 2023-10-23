@@ -1,0 +1,10 @@
+package com.cloudVandanaSol;
+
+public class PangramChecker {
+    public static void main(String[] args) {
+        String input = "The quick brown fox jumps over the lazy dog"; // Replace with your input string
+        String newinput=input.replace(" ","");
+       System.out.println(newinput);
+    }
+
+}

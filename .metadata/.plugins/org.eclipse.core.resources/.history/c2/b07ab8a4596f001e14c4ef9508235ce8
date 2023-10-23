@@ -1,0 +1,24 @@
+package com.cloudVandanaSol;
+
+import java.util.Scanner;
+
+public class ShuffleArray {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter Array Size");
+		int num=sc.nextInt();
+		int array[]=new int [num];
+		
+		for (int i = 0; i < array.length-1; i++) {
+			sc.nextInt(array[i]);
+		}
+		System.out.println("array Elements Are");
+		for (int i = 0; i < array.length-1; i++) {
+			System.out.println(array[i]);
+		}
+		
+
+	}
+
+}
